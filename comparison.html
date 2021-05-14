@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+  <title>Latitude Analysis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="./bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Latitude</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 navbar-right">
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Plots
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="max_temp.html">Max Temperature</a></li>
+                                <li><a class="dropdown-item" href="humidity.html">Humidity</a></li>
+                                <li><a class="dropdown-item" href="cloudiness.html">Cloudiness</a></li>
+                                <li><a class="dropdown-item" href="wind_speed.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" aria-current="page" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+   </div> 
+   <div class="container px-4">
+        <div class="col border">
+            <h1>Comparison: Latitude vs. X</h1>
+            <div class="col-sm-4 border">
+                <h3>Click any plot to get an in-depth analysis.</h3>
+                <div class="row row-cols-2">
+                    <div class="col">
+                        <h2>vs. Max Temperature</h2>
+                        <article>
+                        <a target="_blank" href="max_temp.html">
+                            <img src="Assets/LatvsMaxTemp.png" alt="Max Temperature Map">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h2>vs. Humidity</h2>
+                        <article>
+                        <a target="_blank" href="humidity.html">
+                            <img src="Assets/LatvsHum.png" alt="Humidity Map">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h2>vs. Cloudiness</h2>
+                        <article>
+                        <a target="_blank" href="cloudiness.html">
+                            <img src="Assets/LatvsCloud.png" alt="Cloudiness Map">
+                        </a>
+                    </div>
+                    <div class="col">
+                        <h2>vs. Wind Speed</h2>
+                        <article>
+                        <a target="_blank" href="wind_speed.html">
+                            <img src="Assets/LatvsWindSpd.png" alt="Wind Speed Map">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
