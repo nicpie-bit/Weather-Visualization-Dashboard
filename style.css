@@ -1,3 +1,12 @@
+body {
+    background: #f1f1f1;
+  }
+h1 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 15px;
+}
 .navbar-nav {
     flex: 1;
     justify-content: flex-end;
@@ -6,8 +15,13 @@
     background-color: #fc018b;
 }
 
-/* @media (max-width: 480px) {
-    .navbar-nav {
-        visibility: hidden;
+img {
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width: 500px) {
+    col {
+
     }
-} */
+} 
