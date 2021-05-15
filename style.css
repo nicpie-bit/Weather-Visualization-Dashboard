@@ -4,6 +4,9 @@ body {
 .container {
     background-color: white;
 }
+#contsize {
+    max-height: fit-content;
+}
 h1 {
     font-size: 30px;
     color: #9900ff;
@@ -21,7 +24,7 @@ h3 {
     justify-content: flex-end;
 } 
 #largerimage {
-    width: 350px;
+    width: 400px;
     height: 350px;
 }
 #floatsummaryimg {
@@ -47,10 +50,24 @@ img {
     width: 200px;
     height: 200px;
 }
-
+#tempborder {
+    border: 2px solid black;
+}
+#humborder {
+    border: 2px solid black;
+}
+#cloudborder {
+    border: 2px solid black;
+}
+#wsborder {
+    border: 2px solid black;
+}
 @media (max-width: 500px) {
     .col-md-5 {
         float: left;
         width: 100%;
+    }
+    .row-cols-2 {
+        float: none;
     }
 } 
